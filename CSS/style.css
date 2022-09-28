@@ -1,0 +1,237 @@
+*{
+    font-family: url(../fonts/EBGaramond-Regular.ttf);
+    font-weight: 100;
+}
+ 
+body{
+    background-color: rgb(236, 234, 228);
+}
+
+
+nav{
+    display: flex;
+    background-color: rgb(168, 218, 176);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a{
+    color:  rgb(110, 17, 82);
+    padding: 2px;
+    margin: 5px;
+    text-align: right;
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+ul{
+    list-style-type: none;
+    text-align: right ;    
+    display: inline-block;
+}
+
+li{
+    width: 100px;
+    margin: auto;
+    height: 100px;
+    padding: 30px;
+    display: inline;
+}
+
+.achicate{
+    max-width: 2em;
+}
+
+.smallate{
+    max-width: 10em; 
+    display: block;
+    margin: auto;
+}
+
+.alineate{
+    display: block;
+    margin: auto;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(244, 247, 250);
+    text-align: center;
+    max-width: 100em;
+}
+
+
+.smallateee{
+    max-width: 5em; 
+    display:block;
+    margin: auto;
+    float: left;
+    margin-left: 2px;
+}
+
+.seremos{
+    font-size: 2em;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.justific{
+    font-size: 1em;
+    text-align: justify;
+    box-sizing: border-box;
+    margin: 100px;
+}
+
+.libros{
+    display: block;
+    box-sizing: border-box;
+}
+
+.textop{
+    font-size: medium;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+.librosalineados{
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.imagesize2{
+    height: 30em;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.margenis{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.smallateee2{
+    max-width: 3.1em; 
+    display:block;
+    margin: auto;
+    float: left;
+    margin-left: 2px;
+}
+
+
+.barracentro{  
+    text-align: center;
+}
+
+.flex_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #444;
+    margin: 50px 50px;
+    padding: 20px;
+    border: 3px  solid rgb(168, 218, 176) ;
+    outline: 5px solid rgb(110, 17, 82);
+}
+
+.form{
+    min-width: 100px;
+    flex: 1;
+    text-align: right;
+    text-align: center;
+    padding: 20px;
+    order: 5;
+}
+
+.form_input{
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid rgb(168, 218, 176);
+    background: transparent;
+    color: #fff;
+}
+
+.form_input:focus{
+    background:linear-gradient(to bottom, transparent,rgb(168, 218, 176)  );
+    outline: none;
+    border-bottom: 5px solid rgb(110, 17, 82);
+}
+
+.form textarea{
+    min-height: 140px;
+    resize: none;
+}
+
+.form_img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px;
+    order: 2;
+}
+
+.form_img img{
+    width: 35%;
+    margin: auto;
+    border-radius: 50%;
+    padding: 20px;
+
+}
+ 
+.form input[type="submit"] {
+    background: rgb(122, 184, 132);
+    padding: 12px;
+}
+
+
+   
+.grid-layout{ 
+    display: grid;
+    margin: auto;
+    grid-template-columns: 30% auto 30%;
+}
+
+.caja{
+    width: 350px;
+    border: 2px  solid rgb(105, 21, 80);
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-layout2{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 5fr;
+}
+
+footer{
+    width: 100%;
+    padding: 50px;
+    background-image: url(../img/footerpapel.jpeg);
+    background-size: cover;
+ }
+ 
+ @media screen and (max-width: 700px){
+    nav, .librosalineados, .row, .grid-layout, .grid-layout2 {
+        flex-direction: column;
+    }
+}
+
+
