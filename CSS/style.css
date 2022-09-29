@@ -190,20 +190,11 @@ li{
     margin: auto;
     border-radius: 50%;
     padding: 20px;
-
 }
  
 .form input[type="submit"] {
     background: rgb(122, 184, 132);
     padding: 12px;
-}
-
-
-   
-.grid-layout{ 
-    display: grid;
-    margin: auto;
-    grid-template-columns: 30% auto 30%;
 }
 
 .caja{
@@ -215,10 +206,9 @@ li{
 }
 
 .grid-layout2{
-    display: grid;
+    display: flex;
     margin: auto;
     grid-template-columns: 25% 25% 25% 25%;
-    gap: 5fr;
 }
 
 footer{
@@ -228,10 +218,17 @@ footer{
     background-size: cover;
  }
  
- @media screen and (max-width: 700px){
-    nav, .librosalineados, .row, .grid-layout, .grid-layout2 {
+ 
+
+.grid-layout{ 
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    grid-template-columns: 30% auto 30%;
+}
+
+@media screen and (max-width: 700px){
+    nav, .librosalineados, .row, .grid-layout, .grid-layout2, .caja {
         flex-direction: column;
     }
 }
-
-
