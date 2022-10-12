@@ -77,10 +77,13 @@ li{
     float: left;
     margin-left: 2px;
 }
-
 .seremos{
     font-size: 2em;
     text-align: left;
+    margin-left: 25px;
+}
+
+.contact{
     margin-left: 25px;
 }
 
@@ -218,8 +221,6 @@ footer{
     background-size: cover;
  }
  
- 
-
 .grid-layout{ 
     display:flex;
     flex-direction: row;
